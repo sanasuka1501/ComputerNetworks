@@ -1,4 +1,4 @@
-# An example script to connect to Google using socket
+# An example script to connect to Facebook using socket
 # programming in Python
 import socket # for socket
 import sys
@@ -13,7 +13,7 @@ except socket.error as err:
 port = 80
 
 try:
-	host_ip = socket.gethostbyname('www.google.com')
+	host_ip = socket.gethostbyname('www.facebook.com')
 except socket.gaierror:
 
 	# this means could not resolve the host
@@ -23,6 +23,6 @@ except socket.gaierror:
 # connecting to the server
 s.connect((host_ip, port))
 
-print "the socket has successfully connected to google \
+print "the socket has successfully connected to facebook \
 on port == %s" %(host_ip)
 
